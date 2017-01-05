@@ -3,15 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {MaterialModule} from '@angular/material';
-import { AppComponent } from './components/root.component/app.component';
-import { AboutComponent } from './components/about.component/about.component';
+import { AppComponent } from '../components/root.component/app.component';
+import { AboutComponent } from '../components/about.component/about.component';
+import {RouterModule} from "@angular/router";
+import {routes} from "./router/routing";
+import {DashboardComponent} from "../components/dashboard.component/dashboard.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    DashboardComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     FormsModule,
     HttpModule,
