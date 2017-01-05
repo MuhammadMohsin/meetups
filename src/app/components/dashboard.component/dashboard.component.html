@@ -1,1 +1,14 @@
-<h1>Hello Dashboard</h1>
+<md-list>
+  <h1 md-subheader class="subheader">Contacts</h1>
+  <div *ngFor="let contact of contacts, let ind = index">
+  <md-list-item>
+    <img *ngIf="(ind % 2 == 0)"  md-list-avatar src="/assets/avatar_male.png" alt="profile picture">
+    <img *ngIf="(ind % 2 != 0)"  md-list-avatar src="/assets/avatar-female.png" alt="profile picture">
+    <h3 md-line> {{contact.name + " " + (ind + 1)}} </h3>
+    <p md-line>
+      <span> {{contact.number}} </span>
+    </p>
+  </md-list-item>
+  <md-divider></md-divider>
+  </div>
+</md-list>

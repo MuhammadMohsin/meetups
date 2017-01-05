@@ -4,6 +4,7 @@
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
+  padding-top: 120px;
 }
 .login-form{
   border-radius: 4px;
@@ -15,7 +16,7 @@
   color: white;
   margin: 0 auto;
   width: 500px;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 .text-center{
   text-align: center;
@@ -52,4 +53,16 @@
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+}
+.chunk{
+  color: #ffffff;
+  line-height: 0.5;
+  text-align: center;
+}
+.text--display1 {
+  font-weight: 600;
+  font-size: 45px;
+}
+.text--big{
+  font-size: 20px;
 }
